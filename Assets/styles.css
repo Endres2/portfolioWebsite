@@ -1,0 +1,226 @@
+*{
+    font-family:"Roboto", "Arial", "Helvetica", "sans-serif";
+    font-weight: 500;
+    text-align: center;
+}
+header{
+    background-color: rgb(44, 44, 44);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+h1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 250%;
+    background-color: cadetblue;
+    padding: 15px 20px 15px 60px;
+    top: 15%;
+    color: rgb(44, 44, 44);
+    font-weight: bolder;
+    max-height: 100px;;
+    
+
+}
+nav{
+    display: flexbox;
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    
+}
+ol, ul {
+    list-style: none;
+    
+}
+nav a{
+    color: cadetblue;
+    
+}
+
+.navLink{
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 150%;
+    padding: 0 20px 0 20px;
+    display: block;
+}
+
+figure{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-image:url("bannerImage2.jpg") ;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+}
+figure > h2{
+    
+    background-color: cadetblue;
+    font-weight: bolder;
+    color: rgb(44, 44, 44);
+    font-size: 200%;
+    flex: 0 0 30%;
+    flex-flow:row flex-end;
+    padding: 15px 20px 15px 20px;
+    margin: 10px;
+    text-align: center;
+    min-width: 300px;
+    
+}
+/* Contains flex box and footer */
+main{
+    display: flex;
+    justify-content: space-around;
+    height: 50rem;
+    padding: 0 5%;;
+}
+.flex-grid{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: darkgray;
+    align-items: stretch;
+    align-content: space-between;
+    align-items: baseline;
+    height: fit-content;
+
+    
+}
+.flex-item{
+    flex-wrap: wrap;
+    flex: 1 1 24%;
+    background-color: darkseagreen;
+    text-align: right;
+    border-right: solid 5px deepskyblue;
+    padding-right: 10px;
+    font-size: 220%;
+}
+.flex-content{
+    padding: 0 5%;
+    flex-wrap: wrap;
+    flex: 1 1 64%;
+    min-width: 469;
+    background-color: darkviolet;
+    height: fit-content;
+    margin: 50px 0;
+}
+
+.project{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(146, 197, 63);
+    
+
+}
+.flex-image-1{
+    display: flex;
+    border: solid 5px mediumaquamarine;
+    flex: 3 1 98%;
+    height: 300px;
+    margin: 1%;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+   
+
+}
+.flex-image{
+    display: flex;
+    border: solid 5px mediumturquoise;
+    flex: 1 1 48%;
+    height: 200px;
+    margin: 1%;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+ 
+}
+.project-title > h4, p {
+    display: flex;
+    font-weight: bolder;
+    background-color: mediumaquamarine;
+    min-width: 150px;
+    padding: 10px 0;
+    color: rgb(44, 44, 44);
+}
+.project-title > h4{
+    font-size: 150%;
+}
+.project-title > p{
+    margin-bottom: 20px;;
+    
+}
+a{
+    display: block;
+    background-color: rgb(112, 216, 152);
+}
+
+@media screen and (max-width: 768px){
+header, main {
+    flex-direction: column;
+    
+    height: 60%;
+    }
+h1{
+    height: 60%;
+    font-size: 200%;
+    width: 100%;
+    padding: 5% 25% 5% 25%;
+}
+nav{
+    padding: 5% 0 5% 0;
+}
+h2{
+    flex: 1 1 50%;
+    font-size: 200%;
+    padding: 5% 5% 5% 5%;
+
+    
+}
+h3{
+   
+
+}
+.flex-grid{
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+}
+.flex-item{
+    text-align: left;
+    padding: 0 0%;
+    width: 100%;
+    border-right: 0;
+    border-bottom: solid 5px mediumturquoise;
+    align-items:flex-start;
+
+}
+figure{
+    justify-content: center ;
+}
+.project{
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+.flex-image-1{
+    min-height: 200px;
+}
+.flex-image{
+    min-height: 200px;
+    background-color: mediumvioletred;
+
+}
+
+
+}
