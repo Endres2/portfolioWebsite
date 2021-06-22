@@ -1,3 +1,4 @@
+/* Global styles */
 *{
     font-family:"Roboto", "Arial", "Helvetica", "sans-serif";
     font-weight: 500;
@@ -6,6 +7,7 @@
 
 }
 
+/* Title Styles */
 header{
     background-color: rgb(44, 44, 44);
     height: 100px;
@@ -16,6 +18,7 @@ header{
     
     
 }
+
 h1{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 250%;
@@ -27,6 +30,8 @@ h1{
     max-height: 100px;;
 
 }
+
+/*  Navigation Styles*/
 h3{
     text-align: right;
     color: rgb(53, 75, 148);
@@ -39,15 +44,14 @@ h3{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    padding: 0 50px;
     min-width: 300px;
     
 }
 nav ul {
     display: flex;
-
+    
 }
-
 .navLink{
     color: cadetblue;
     flex-wrap: wrap;
@@ -55,6 +59,7 @@ nav ul {
     font-size: 150%;
     display: block;
     list-style: none;
+    
 }
 
 figure{
@@ -83,13 +88,14 @@ figure > h2{
     min-width: 300px;
     
 }
-/* Contains flex box and footer */
+/* Contains flex box */
 main{
     background-color:whitesmoke;
     display: flex;
     flex: 1 1 100%;
     padding: 5% 5%;
 }
+/* Creates a flexbox grid to style Titles and content */
 .flex-grid{
     display: flex;
     flex: 1 1 90%;
@@ -113,11 +119,12 @@ main{
 p{
    text-align: left;
 }
+/* Flex grid for projects */
 .project{
     display: flex;
     flex-flow: row wrap;
 }
-/* /////////////////////////////////////////////////////////////// */
+/* Big container */
 .flex-image-1{
     position: relative;
     display: flex;
@@ -129,10 +136,10 @@ p{
     justify-content: flex-end;
     align-items: flex-start;
     position: relative;
-    /* background-image:url("bannerImage2.jpg") ; */
    
 
 }
+/* Deals with background image and link style of main project */
 .flex-image-1>a{
     box-shadow: inset 2000px 0 0 0 rgba(128, 236, 240, 0.5);
     display:inline-block;
@@ -143,16 +150,7 @@ p{
 .flex-image-1>a:hover{
     box-shadow: unset;
 }
-.flex-image>a{
-    box-shadow: inset 2000px 0 0 0 rgba(128, 236, 240, 0.5);
-    display:inline-block;
-    overflow:hidden;
-    width:100%;
-    height:100%;
-}
-.flex-image>a:hover{
-    box-shadow: unset;
-}
+/* Small containers */
 .flex-image{
     display: flex;
     border: solid 5px cadetblue;
@@ -167,6 +165,18 @@ p{
     box-shadow: inset 2000px 0 0 0 rgba(128, 236, 240, 0.5);
  
 }
+/* Deals with background image and link style of small projects */
+.flex-image>a{
+    box-shadow: inset 2000px 0 0 0 rgba(128, 236, 240, 0.5);
+    display:inline-block;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+.flex-image>a:hover{
+    box-shadow: unset;
+}
+/* Deals with shading of project images to give a shading and remove it on hover */
 .background-image{
     position: relative;
     box-shadow: inset 2000px 0 0 0 rgba(128, 236, 240, 0.5);
@@ -175,7 +185,7 @@ p{
 .background-image:hover{
     box-shadow: unset;
 }
-/* //////////////////////////////////////////////////////////////// */
+/* Styling of titles and small description of every project */
 .project-title > h4, h5 {
     position: absolute;
     bottom: 5%;
@@ -197,7 +207,7 @@ h5{
     font-size: 150%;
     bottom: 25px;
 }
-
+/* Styling of contact me links */
 .navLink{  
     display: flex;
     width: fit-content;
@@ -236,7 +246,7 @@ h5{
     color: whitesmoke;
 }
 
-
+/* Mobile and small screen port adaptations */
 @media screen and (max-width: 768px){
 header, main {
     flex-direction: column;
